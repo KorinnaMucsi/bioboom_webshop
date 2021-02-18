@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/purchase.css">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/menu_setup.js"></script>
+<script src="js/webshop.js"></script>
+<script src="js/purchase.js"></script>
+<title>Purchase</title>
+</head>
+
+<body onload="Javascript:GetOrderedItems();">
+<div id="logo">PROVIDING FUEL TO YOUR PASSION FOR SPORT</div>
+<nav class="menu">
+<a class="toggle-nav" href="#">&#9776;</a>
+	<ul class="active">
+		<li><a href="home.html">Home</a></li>
+		<li><a href="webshop.html">Webshop</a></li>
+		<li><a href="purchase.html">Cart<span id="cartCnt"></span></a></li>
+		<li><a href="contact.html">Contact us</a></li>
+		<li><a href="#">About us</a></li>
+	</ul>
+</nav>
+<form method="post" action="home.html" onsubmit="Javascript:sendPO();">
+<div class="purchHeaderDiv"></div>
+<div class="purchaseDiv">
+<div id="reviewDiv">Please, review your cart, enter your data and click on submit:<br><hr></div>
+<div id="tblPurchDiv"></div>
+<div class="labelDiv"><label for="txtFirstName">First name:</label></div>
+<div class="textDiv"><input type="text" id="txtFirstName" required="required"/></div>
+<div class="labelDiv"><label for="txtLastName">Last name:</label></div>
+<div class="textDiv"><input type="text" id="txtLastName" required="required"/></div>
+<div class="labelDiv"><label for="txtAddress">Address:</label></div>
+<div class="textDiv"><input type="text" id="txtAddress" required="required" style="width:100%;"/></div>
+<div class="labelDiv"><label for="txtCity">City:</label></div>
+<div class="textDiv"><input type="text" id="txtCity" required="required"/></div>
+<div class="labelDiv"><label for="txtZIP">ZIP:</label></div>
+<div class="textDiv"><input type="text" id="txtZIP" required="required"/></div>
+<div class="labelDiv"><label for="txtCountry">Country:</label></div>
+<div class="textDiv"><input type="text" id="txtCountry" required="required" style="width:60%;"/></div>
+<div class="labelDiv"><label for="txtPhone">Phone:</label></div>
+<div class="textDiv"><input type="text" id="txtPhone" required="required"/></div>
+<div class="labelDiv"><label for="txtMail">Mail address:</label></div>
+<div class="textDiv"><input type="text" id="txtMail" required="required" style="width:90%;"/></div>
+</div>
+<div class="purchFooterDiv">
+<input style="margin:1%;" type="submit" value="Purchase">
+<!--onclick="Javascript:sessionStorage.setItem('cartCnt', 0);-->
+<!--<button name="btnTest" onclick="Javascript:GetOrderedItems();">Test</button>
+--></div>
+</form>
+</body>
+
+</html>

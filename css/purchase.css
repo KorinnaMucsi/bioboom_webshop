@@ -1,0 +1,136 @@
+﻿.purchaseDiv{
+	display:inline-block;
+	position:relative;
+	float:left;
+	clear:both;
+	width:88%;
+	margin:0 2% 0 2%;
+	padding:4%;
+	font-size:14pt;
+	color:#666666;
+	text-align:left;
+	vertical-align:central;
+    background-color:white;
+}
+.purchHeaderDiv {	
+	display:inline-block;
+	position:relative;
+	float:left;
+	clear:both;
+	width:96%;
+	margin:2% 2% 0 2%;
+	height:50px;
+	background-color:#FFC000;
+}
+.purchFooterDiv {	
+	display:inline-block;
+	position:relative;
+	float:left;
+	clear:both;
+	width:95%;
+	margin:0 2% 2% 2%;
+	height:50px;
+	background-color:#4472C4;
+	text-align:right;
+	padding-right:1%;
+}
+.labelDiv {
+	display:inline-block;
+	position:relative;
+	float:left;
+	clear:left;
+	width:30%;
+	padding:0.5%;
+	text-align:left;
+}
+.textDiv {
+	display:inline-block;
+	position:relative;
+	width:68%;
+	padding:0.5%;
+	float:left;
+	text-align:left;
+}
+#reviewDiv {
+	font-weight:bold;
+	width:100%;
+	text-align:left;
+}
+.delCartItem {
+	width:1em;
+}
+.tblPurchase {
+	margin:2% 0 2% 0;
+	width:100%;
+	border:thin #666666 solid;
+	table-layout:auto;
+	font-size:14pt;
+}
+.tblPurchase tr td{
+	border:thin #666666 solid;
+	text-align:center;
+}
+@media screen and (max-width: 501px) {
+	.purchaseDiv{
+		display:inline-block;
+		position:relative;
+		float:left;
+		clear:both;
+		width:88%;
+		margin:0 2% 0 2%;
+		padding:4%;
+		font-size:10pt;
+		color:#666666;
+		vertical-align:central;
+	    background-color:white;
+	}
+	.purchHeaderDiv {	
+		display:inline-block;
+		position:relative;
+		float:left;
+		clear:both;
+		width:96%;
+		margin:2% 2% 0 2%;
+		height:50px;
+		background-color:#FFC000;
+	}
+	.purchFooterDiv {	
+		display:inline-block;
+		position:relative;
+		float:left;
+		clear:both;
+		width:95%;
+		margin:0 2% 2% 2%;
+		height:50px;
+		background-color:#4472C4;
+		text-align:right;
+		padding-right:1%;
+	}
+	.labelDiv {
+		display:inline-block;
+		position:relative;
+		float:left;
+		clear:left;
+		width:30%;
+		padding:1%;
+		text-align:left;
+	}
+	.textDiv {
+		display:inline-block;
+		position:relative;
+		width:66%;
+		padding:1%;
+		float:left;
+		text-align:left;
+	}
+	.textDiv input[type=text] {
+		width:50%;
+		height:15px;
+	}
+	.delCartItem {
+		width:1.5em;
+	}
+	.tblPurchase {
+		font-size:6pt;
+	}
+}

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" media="all" href="css/home.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/purchase.css">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/menu_setup.js"></script>
+<script src="js/contact.js"></script>
+
+<title>Contact us</title>
+</head>
+<body>
+<div id="logo">PROVIDING FUEL TO YOUR PASSION FOR SPORT</div>
+<nav class="menu">
+<a class="toggle-nav" href="#">&#9776;</a>
+	<ul class="active">
+		<li><a href="home.html">Home</a></li>
+		<li><a href="webshop.html">Webshop</a></li>
+		<li><a href="purchase.html">Cart<span id="cartCnt">(0)</span></a></li>
+		<li><a href="contact.html">Contact us</a></li>
+		<li><a href="#">About us</a></li>
+	</ul>
+</nav>
+<form method="post" action="home.html" onsubmit="Javascript:ContactUs();">
+<div class="purchHeaderDiv"></div>
+<div class="purchaseDiv">
+<div id="reviewDiv">Please, share your thoughts with us, and we will come back to you, as soon as we can!<br><hr></div>
+<div id="tblPurchDiv"></div>
+	<div style="display:inline-block;position:relative;clear:both;width:100%;padding-top:1%;">
+	Subject:
+	</div>
+	<div style="display:inline-block;position:relative;clear:both;width:100%;">
+	<input id="txtSubject" type="text" style="width:35%;" required="required"/>
+	</div>
+	<div style="display:inline-block;position:relative;clear:both;width:100%;">
+	Your message:
+	</div>
+	<div style="display:inline-block;position:relative;clear:both;width:100%;">
+	<textarea id="txtMessage" cols="80" rows="8" style="max-width:100%; "required="required"></textarea>
+	</div>
+	<div style="display:inline-block;position:relative;clear:both;width:100%;">
+	Please, provide your mail address:
+	</div>
+	<div style="display:inline-block;position:relative;clear:both;width:100%;">
+	<input id="txtMail" type="text" style="width:25%;" required="required"/>
+	</div>
+	<div style="display:inline-block;position:relative;clear:both;width:100%;">
+	Your name:
+	</div>
+	<div style="display:inline-block;position:relative;clear:both;width:100%;">
+	<input id="txtUser" type="text" style="width:25%;" required="required"/>
+	</div>
+
+</div>
+<div class="purchFooterDiv">
+<input style="margin:1%;" type="submit" value="Send your message">
+</div>
+</form>
+</body>
+
+</html>

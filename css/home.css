@@ -1,0 +1,63 @@
+﻿body {
+	width:100%;
+	margin:0;
+	padding:0;
+	background-color:#333;
+}
+figure {
+	display:inline-block;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+figure img {
+	display:block;
+	width:100%;
+	height:100%;
+}
+.tblwelcome {
+	position:relative;
+	display:inline-block;
+	clear:both;
+	float:left;
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.picturediv {
+	position:relative;
+	display:inline-block;
+	width: 32% ;
+}
+#logo {
+	width:50vw;
+	display:inline-block;
+	position:relative;
+	text-align:right;
+	float:right;
+	padding: 14px 16px;
+ 	font-size: 17px;
+	color: #f2f2f2;
+}
+.footerdiv {
+	display:inline-block;
+	position:relative;
+	padding:5% 0 0 0;
+	width:100%;
+	bottom:0;
+	color: #f2f2f2;
+	text-align:center;
+}
+@media screen and (max-width: 720px) {
+.picturediv {
+	position:relative;
+	display:inline-block;
+	width: 48% ;
+}
+.nomob {
+	display:none;
+}
+
+}

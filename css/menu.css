@@ -1,0 +1,105 @@
+﻿/*----- Toggle Button -----*/
+.toggle-nav {
+	display:none;
+}
+
+/*----- Menu Test-----*/
+@media screen and (min-width: 721px) {
+.menu {
+	width:100%;
+	padding-top:10px;
+	box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+	border-radius:3px;
+	background:#303030;
+	}
+}
+.menu ul {
+	display:inline-block;
+}
+
+.menu li {
+	margin:0px 50px 0px 0px;
+	float:left;
+	list-style:none;
+	font-size:17px;
+}
+
+.menu li:last-child {
+	margin-right:0px;
+}
+
+.menu a {
+	text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+	color:#777;
+	transition:color linear 0.15s;
+}
+
+.menu a:hover, .menu .current-item a {
+	text-decoration:none;
+	color:#66a992;
+}
+/*----- Responsive -----*/
+@media screen and (max-width: 720px) {
+	.menu {
+		position:relative;
+		display:inline-block;
+	}
+
+	.menu ul.active {
+		display:none;
+	}
+	
+	.menu ul {
+		width:96%;
+		position:relative;
+		display:inline-block;
+		clear:both;
+		top:120%;
+		left:0px;
+		padding:10px 18px;
+		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+		border-radius:3px;
+		background:#303030;
+	}
+
+	.menu ul:after {
+		width:0px;
+		height:0px;
+		position:absolute;
+		top:0%;
+		left:22px;
+		content:'';
+		transform:translate(0%, -100%);
+		border-left:7px solid transparent;
+		border-right:7px solid transparent;
+		border-bottom:7px solid #303030;
+	}
+
+	.menu li {
+		margin:5px 0px 5px 0px;
+		float:none;
+		display:block;
+	}
+
+	.menu a {
+		display:block;
+	}
+
+	.toggle-nav {
+		padding:20px;
+		float:left;
+		display:inline-block;
+		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+		border-radius:3px;
+		background:#303030;
+		text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+		color:#777;
+		font-size:20px;
+		transition:color linear 0.15s;
+	}
+
+	.toggle-nav:hover, .toggle-nav.active {
+		text-decoration:none;
+		color:#66a992;
+	}
+}

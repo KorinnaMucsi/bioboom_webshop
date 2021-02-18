@@ -1,0 +1,163 @@
+﻿.ws_hdr {
+	display:inline-block;
+	position:relative;
+	float:left;
+	clear:both;
+	width:96%;
+	margin:2% 2% 2% 2%;
+	font-size:20pt;
+	color:#666666;
+	text-align:center;
+	vertical-align:central;
+    background-color:white;
+/*	border-radius:25px;*/
+}
+.container {
+	display:inline-block;
+	position:relative;
+	float:left;
+	height:100%;
+	width:48%;
+	padding:1%;
+	background-color:white;
+}
+
+.container_b {
+	display:inline-block;
+	position:relative;
+	float:left;
+	color:#4472C4;
+	height:100%;
+	background-color:#4472C4;
+    width:23%;
+	padding:1%;
+}
+.container_y {
+	display:inline-block;
+	position:relative;
+	float:left;
+	color:#FFC000;
+	height:100%;
+	background-color:#FFC000;
+    width:23%;
+	padding:1%;
+}
+.tbldiv_pp, .tbldiv_vs, .tbldiv_opd, .tbldiv_hs {
+	display:none;
+}
+.tbldiv_pp_act, .tbldiv_vs_act, .tbldiv_opd_act, .tbldiv_hs_act {
+	position:relative;
+	display:inline-block;
+	clear:both;
+	float:left;
+	width:96%;
+	margin:0 2% 0 2%;
+	border:thin solid #666666;
+	background-color:#E9E9E9;
+}
+table {
+	margin:2%;
+	width:96%;
+	border:thin #666666 solid;
+	table-layout:auto;
+	font-size:20pt;
+	border-collapse:collapse;
+}
+table thead tr td{
+	font-weight:bold;
+	border-bottom:#666666 double thick;
+	border-top:#666666 double thick;
+	text-align:center;
+	max-height:0.5em;
+	font-style:italic;
+}
+table tbody tr td{
+	border-top:1em #333 solid;
+	text-align:center;
+	height:5em;
+}
+table img {
+	max-height:5em;
+}
+table input {
+	width:50px;
+}
+.cart {
+	height:2em;
+}
+.orderqty {
+	font-size:20pt;
+}
+.buttonDiv {
+	position:relative;
+	display:inline-block;
+	clear:both;
+	float:left;
+	width:96%;
+	margin:0 2% 0 2%;
+	text-align:right;
+	padding-bottom:10%;
+}
+@media screen and (max-width: 501px) {
+	.ws_hdr {
+		display:inline-block;
+		position:relative;
+		clear:both;
+		height:3em;
+		width:96%;
+		margin:2% 2% 2% 2%;
+		font-size:14pt;
+		color:#666666;
+		text-align:center;
+		vertical-align:middle;
+	}
+	.container {
+		display:inline-block;
+		position:relative;
+		width:72%;
+		height:100%;
+		background-color:white;
+	}
+	
+	.container_b {
+		display:inline-block;
+		position:relative;
+		color:#4472C4;
+		background-color:#4472C4;
+	    width:11%;
+		height:100%;
+	}
+	.container_y {
+		display:inline-block;
+		position:relative;
+		color:#FFC000;
+		background-color:#FFC000;
+	    width:11%;
+		height:100%;
+	}
+	table {
+		font-size:6pt;
+	}
+	table img {
+		width:5em;
+	}
+	table input {
+		width:20px;
+	}
+	.cart {
+		width:3.5em;
+	}
+	.orderqty {
+		font-size:6pt;
+	}
+	.buttonDiv {
+		position:relative;
+		display:inline-block;
+		clear:both;
+		float:left;
+		width:96%;
+		margin:2%;
+		padding-bottom:10%;
+		text-align:right;
+	}
+}
