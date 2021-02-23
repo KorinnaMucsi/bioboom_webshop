@@ -1,2 +1,2 @@
 # bioboom_webshop
-webshop for buying healthy products
+mini webshop for buying healthy products
